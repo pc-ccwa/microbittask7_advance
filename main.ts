@@ -1,4 +1,7 @@
 input.onButtonPressed(Button.A, function () {
+    basic.showNumber(input.lightLevel())
+})
+input.onButtonPressed(Button.B, function () {
     led.setBrightness(255)
     if (input.lightLevel() < 50) {
         led.setBrightness(255)
